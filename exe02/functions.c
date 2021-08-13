@@ -1,7 +1,16 @@
 
 #include "functions.h"
 
-int somar(int n1, int n2){
+int menor(int v[], int n){
 
-    return n1+n2;
+  int menor_valor = v[0];
+
+  //FAZ A VERIFICAÇÃO DO MENOR VALOR
+  for(int i = 0; i < n; i++)
+  {
+    if(v[i] < menor_valor)
+      menor_valor = v[i];
+  }
+
+  return menor_valor;
 }
